@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Évaluation des Prototypes</title>
+    <link rel="stylesheet" href="questionnaire.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Évaluation des Prototypes SmartLearn</h1>
+    <p class="subtitle">Veuillez choisir les prototypes qui vous semblent les meilleurs.</p>
+
+    <form method="POST" action="https://api.sheetmonkey.io/form/6oM6rcWSPGgj9csXZN9fMQ">
+
+        <h2>1. Quel prototype préférez-vous visuellement ?</h2>
+        <div class="prototype-grid">
+
+            <label class="proto-card">
+                <img src="proto1.png" alt="Prototype 1">
+                <input type="radio" name="prototype_prefere" value="Prototype 1" required>
+                <span class="label-text">Prototype 1</span>
+            </label>
+
+            <label class="proto-card">
+                <img src="proto2.png" alt="Prototype 2">
+                <input type="radio" name="prototype_prefere" value="Prototype 2">
+                <span class="label-text">Prototype 2</span>
+            </label>
+
+            <label class="proto-card">
+                <img src="proto3.png" alt="Prototype 3">
+                <input type="radio" name="prototype_prefere" value="Prototype 3">
+                <span class="label-text">Prototype 3</span>
+            </label>
+
+            <label class="proto-card">
+                <img src="proto4.png" alt="Prototype 4">
+                <input type="radio" name="prototype_prefere" value="Prototype 4">
+                <span class="label-text">Prototype 4</span>
+            </label>
+
+        </div>
+
+        <h2>2. Quel prototype semble le plus clair et organisé ?</h2>
+        <select name="prototype_plus_clair" required>
+            <option value="">Choisir…</option>
+            <option>Prototype 1</option>
+            <option>Prototype 2</option>
+            <option>Prototype 3</option>
+            <option>Prototype 4</option>
+        </select>
+
+        <h2>3. Lequel paraît le plus moderne ?</h2>
+        <select name="prototype_plus_moderne" required>
+            <option value="">Choisir…</option>
+            <option>Prototype 1</option>
+            <option>Prototype 2</option>
+            <option>Prototype 3</option>
+            <option>Prototype 4</option>
+        </select>
+
+        <h2>4. Lequel semble le plus facile à utiliser ?</h2>
+        <select name="prototype_plus_facile" required>
+            <option value="">Choisir…</option>
+            <option>Prototype 1</option>
+            <option>Prototype 2</option>
+            <option>Prototype 3</option>
+            <option>Prototype 4</option>
+        </select>
+
+        <h2>5. Commentaires (optionnel)</h2>
+        <textarea name="commentaires" placeholder="Votre avis, suggestions..."></textarea>
+
+        <button type="submit" class="btn">Envoyer</button>
+
+    </form>
+</div>
+
+</body>
+</html>
