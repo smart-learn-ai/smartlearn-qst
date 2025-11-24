@@ -575,4 +575,61 @@ textarea:focus-visible,
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--accent-hover);
+
+}
+/* ======= EMAIL FIELD STYLING ======= */
+input[type="email"] {
+    width: 100%;
+    padding: 18px;
+    background: var(--card-bg);
+    color: var(--text-primary);
+    border: 2px solid #333;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: var(--transition);
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 30px;
+}
+
+input[type="email"]:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(0, 230, 118, 0.2);
+    transform: translateY(-2px);
+}
+
+input[type="email"]::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
+
+/* Style pour l'état invalide (si email mal formaté) */
+input[type="email"]:invalid {
+    border-color: #ff4444;
+}
+
+input[type="email"]:invalid:focus {
+    box-shadow: 0 0 0 3px rgba(255, 68, 68, 0.2);
+}
+
+/* Style pour l'état valide */
+input[type="email"]:valid {
+    border-color: #33cc33;
+}
+
+/* Animation d'entrée pour le champ email */
+input[type="email"] {
+    opacity: 0;
+    animation: fieldEntrance 0.6s ease-out 0.5s forwards;
+}
+
+@keyframes fieldEntrance {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
